@@ -24,6 +24,10 @@ html{
 .navbar{
     display: flex;
     justify-content: space-between;
+    /* background-color: #3882f6;
+     */
+    /* background: transparent; */
+
     /* border: 2px solid red; */
 }
 .right-side{
@@ -98,8 +102,15 @@ a{
     text-decoration: none;
     color: aliceblue;
 }
-a:hover{
+.left-side a{
+    font-size: 18px;
+}
+.left-side a:hover, a.active{
     color: red;
+    font-size: x-large;
+    /* text-decoration:; */
+    
+    transition: .5s;
 }
 /* This is the second section */
 
@@ -118,6 +129,11 @@ h2 {
     font-size: 36px;
     font-weight: 800;
     color: #1f2937;
+}
+h2:hover{
+    /* background-color: red; */
+    font-size: 40px;
+    transition: .2s;
 }
 
 .main2 h2, p{
@@ -145,7 +161,7 @@ h2 {
 .place_holder{
     /* width: 200px; */
     display: flex;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     justify-content: space-between;
     font-weight: 800;
 }
@@ -163,9 +179,12 @@ h2 {
     /* max-width: 800px; */
     padding: 30px;
     color: #1f2937;
-    font-size: 36px;
+    /* font: ; */
+    /* font: 300 italic 36px; */
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
+    font-size: 30px;
     font-style: italic;
-    font-weight: light;
+    font-weight: 300;
 
 }
 
@@ -176,7 +195,7 @@ h2 {
     /* margin: 40px; */
     border-radius: 10px;
     display: flex;
-    padding-left: 20px;
+    /* padding-left: 20px; */
     height: 100px;
     justify-content: space-evenly;
     align-items: center;
@@ -189,6 +208,11 @@ h2 {
     width: 100px;
     height: 30px;
     border-radius: 20px;
+}
+button:hover{
+    background-color: red;
+    /* cursor: */
+    /* animation-name: ; */
 }
 
 /* footer */
