@@ -26,12 +26,14 @@ html{
 }
 .right-side{
     display: flex;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
     margin: 20px;
     width: 30%;
     font-size: 30px;
 }
-
+.space{
+    width: 5px
+}
 .left-side {
     display: flex;
     gap: 20px;
@@ -40,6 +42,21 @@ html{
     padding-left: 35px;
     margin: 20px;
 }
+
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.left-side a{
+    font-size: 18px;
+}
+.left-side a:hover, a.active{
+    color: red;
+    font-size: x-large;
+    /* outline: auto; */
+    transition: .5s;
+}
+
 .intro_main{
     margin: 40px;
     margin-bottom: 40px;
@@ -50,6 +67,13 @@ html{
 .content{
     width: 50%;
     flex-wrap: wrap;
+}
+
+.content:hover{
+    box-shadow:0 0 5px red;
+    border-radius: 10px;
+    text-shadow: 0 0 5px yellow;
+    transition: 1s;
 }
 
 .content button{
@@ -77,18 +101,6 @@ h1{
     
 }
 
-a{
-    text-decoration: none;
-    color: aliceblue;
-}
-.left-side a{
-    font-size: 18px;
-}
-.left-side a:hover, a.active{
-    color: red;
-    font-size: x-large;
-    transition: .5s;
-}
 /* This is the second section */
 
 .main2 {
@@ -163,17 +175,27 @@ h2:hover{
     justify-content: space-evenly;
     align-items: center;
 }
+.info p:first-child{
+    /* border: 2px solid red; */
+    /* padding: 10px; */
+    font-weight: 600;
+    font-size: 24px;
+    text-align: start;
+}
 
 .main4 button{
     background-color: inherit;
+    /* box-shadow: 0 0 5px ; */
     border: 2px solid #E5E7EB;
     color: #E5E7EB;
     width: 100px;
-    height: 30px;
+    height: 35px;
     border-radius: 20px;
 }
 button:hover{
-    background-color: red;
+    /* background-color: red ; */
+    box-shadow: 0 0 5px cyan,0 0 25px cyan,0 0 50px cyan;
+    transition: 1s;
 }
 
 /* footer */
